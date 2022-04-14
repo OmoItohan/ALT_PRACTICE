@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        SURVEY FORM
+    </title>
+
+    <style>
+        body{
+            background-color: plum;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: left;
+        }
+
+        form{
+            background-color: white;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: indigo;
+        }
+
+        .form-control{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea{
+            border: 1px solid;
+            border-radius: 2px;
+            font-family: inherit;
+            display: block;
+            width: 95%;
+            padding: 10px;
+        }
+
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        button {
+            background-color: white;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<input! -- creating a survey form -->
+<body>
+    <h1>Welcome to AityEats. Thanks for your patronage. Please leave a review of your experience</h1>
+    
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label><br>
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div><br>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label><br>
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div><br>
+  
+        <div class="form-control">
+            <label for="age" id="age">
+                What is your age group? <br>
+            <label for="age1">
+                <input type="radio" 
+                    id="age1"
+                    name="agegrp">Below 18</input>
+                </label><br>
+            <label for="age1">
+                    <input type="radio" 
+                        id="age1"
+                        name="agegrp">Below 18</input>
+                    </label><br>
+            <label for="age2">
+                <input type="radio" 
+                    id="age2"
+                    name="agegrp">18-25</input>
+                </label><br>
+            <label for="age3">
+                <input type="radio" 
+                    id="age3"
+                    name="agegrp">26-40</input>
+                </label><br>
+            <label for="age4">
+                <input type="radio" 
+                    id="age4"
+                    name="agegrp">Above 40</input>
+                </label>
+            </label>
+        </div><br>
+
+        <div class="form-control">
+            <label for="publicity" id="pub">
+                How did you hear about the Resturant? <br>
+                <label for="pub-1">
+                    <input type="radio"
+                           id="pub-1"
+                           name="publicity">A friend</input>
+                </label><br>
+                <label for="pub-2">
+                    <input type="radio"
+                           id="pub-2"
+                           name="publicity">Socia Media</input>
+                </label><br>
+                <label for="pub-3">
+                    <input type="radio"
+                           id="pub-3"
+                           name="publicity">Fliers/Adverts</input>
+            </label><br>
+        </div><br>
+  
+        <div class="form-control">
+            <label>
+                Would you recommend AityEats
+                to a friend?<br>
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommend-1"> 
+                <input type="radio"
+                       id="recommend-1"
+                       name="recommend">Yes</input>
+            </label><br>
+            <label for="recommend-2">
+                <input type="radio"
+                       id="recommend-2"
+                       name="recommend">No</input>
+            </label><br>
+            <label for="recommend-3">
+                <input type="radio"
+                       id="recommend-3"
+                       name="recommend">Maybe</input>
+            </label><br>
+        </div><br>
+
+    <div class="form-control">
+        <label>How often do you visit our resturant
+            <small>(Check all that apply)</small> <br>
+        </label>
+        <!-- Input Type Checkbox -->
+        <label for="inp-1">
+            <input type="checkbox"
+                   name="inp">Once a year</input></label>
+        <label for="inp-2"><br>
+            <input type="checkbox"
+                   name="inp">Atleast once a month</input></label>
+        <label for="inp-3"><br>
+            <input type="checkbox"
+                   name="inp">Weekly </input></label>
+        <label for="inp-4"><br>
+            <input type="checkbox"
+                   name="inp">Daily</input></label>
+        </div><br>
+
+        <div class="form-control">
+            <label>
+                Rate your overall experience <br>
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="rate-1">
+                <input type="radio"
+                       id="rate-1"
+                       name="rate">Excellent</input>
+            </label><br>
+            <label for="rate-2">
+                <input type="radio"
+                       id="rate-2"
+                       name="rate">Good</input>
+            </label><br>
+            <label for="rate-3">
+                <input type="radio"
+                       id="rate-3"
+                       name="rate">Bad</input>
+            </label><br>
+            <label for="rate">
+                <input type="radio"
+                id="rate-4"
+                name="rate">Very bad</input>
+            </label>
+        </div><br>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div><br>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+    </body>
+    
